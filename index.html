@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imageColor | Extrair cores na imagem</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/colorthief@2.3.2/dist/color-thief.min.js"></script>
+</head>
+<body>
+     
+    <header>
+      
+        <nav>
+            <div class="logo" >
+              <img src="img/logo.png" alt=""></img>
+              <span>ImagColor</span>
+            </div>
+            <div class="icon-menu clicked" onclick="toggler()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="menu" >
+                
+                <div class="nav-header">
+                  <div class="logo">
+              <img src="img/logo.png" alt=""></img>
+              <span>ImagColor</span>
+            </div>
+                   <div class="close-menu" onclick="toggler()">
+                       <div class="div1"></div>
+                        <div class="div2"></div>
+                       
+                   </div>
+                </div>
+                <div class="items">
+                    <li>
+                    <a href="#">Home</a>
+                </li>
+                 <li>
+                    <a href="#">Sobre nos</a>
+                </li>
+                 <li>
+                    <a href="#">Contacto</a>
+                </li>
+                 <li class="btn">
+                    <a href="#">LOGIN</a>
+                </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+ 
+            <div class="input" >   
+      
+       <video controls id="video" width="300" ></video>
+    <canvas id="canvas"></canvas>
+    
+            </div>
+             <div class="nav2">
+          <div class="camera" ><img src="img/camera.png" alt="" onclick="live()"> </div>
+          <div class="popular"><img src="img/ic_web.png" alt=""></div>
+          <div class="file"><img src="img/ic_folder_image.png" alt="" >  <input type="file" name="" id="foto"></div>
+          <div class="popular"><img src="img/ic_format_color_fill.png" alt=""></div>
+          <div class="popular" id="saca"><img src="img/ic_camera_iris.png" alt=""></div>
+      </div>
+   
+     
+    </div>
+     <div class="blur"></div>
+     
+       <div id="colors-container">
+           <div id="btnclear">
+               <div id="limpar" >limpar</div>
+           </div>
+       </div>
+       <div class="make">
+           <div class="viewColor" id="viewColor">
+               <p id="rgb"></p>
+                <p id="hex"></p>
+           </div>
+        <input type="range" id="r" max="255" >
+            <input type="range" id="g" max="255">
+             <input type="range" id="b" max="255">
+           
+       </div>
+       </div>
+       
+</body>
+<script src="js/script.js"></script>
+</html>
