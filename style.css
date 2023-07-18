@@ -1,0 +1,329 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background: #070707;
+
+}
+header,nav{
+    width: 100%;
+    height: 60px;
+ background: #0f0f0f;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 28px;
+    z-index: 2;
+}
+nav .logo{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+nav .logo img{
+    width: 30px;
+    height: 30px;
+}
+nav .logo span{
+    color:gainsboro;
+    font-weight: bold;
+    font-size: 23px;
+}
+ul li{
+    list-style: none;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+.icon-menu{
+    width: 45px;
+    height: 26px;
+    gap:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.icon-menu div{
+    width: 25px;
+    height: 2px;
+    border-radius: 1px;
+    background: linear-gradient(45deg,#dfd4ff, #fff);
+}
+
+nav ul{
+    position: fixed;
+    background:rgba(50,50,50,0.2);
+    margin-right: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    border-left: 1px solid #111111;
+    backdrop-filter:blur(5px);
+    width: 75%;
+    display: block;
+
+}
+nav .opened{
+    margin-right: 0;
+}
+nav ul{
+    margin-right: -75%;
+    z-index: 2;
+}
+
+ul .nav-header{
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+ul .close-menu{
+    width: 26px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ul .close-menu .div1{
+ width: 26px;
+ height: 2px;
+ background: gray;
+ transform: rotate(45deg);
+ margin-top: 1px;
+}
+ul .close-menu .div2{
+ width: 26px;
+ height: 2px;
+ background: gray;
+ transform: rotate(-45deg);
+ margin-top: -1px;
+}
+.container{
+    width: 100%;
+    
+}
+.clicked{
+    width: 45px;
+    background: #840fda ;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    align-items: center;    
+    height: 100vh;
+    padding-top: 80px;
+}
+.items .btn{
+    padding: 8px;
+    width: 75%;
+    border: 1px solid #840fda ;
+    border-radius: 8px;
+    text-align: center;
+}
+.items li:hover{
+    padding: 8px;
+    width: 75%;
+    background: #840fda;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+}
+.items li a:hover{
+    
+}
+.desfocar{
+  position: absolute;
+  height: 100%;
+  background: rgba(0,0,0,0.03);
+  width: 25%;
+  backdrop-filter:blur(4px);
+  left: 0;
+  z-index: 1;
+  top: 0;
+}
+.container{
+display: flex;
+justify-content: center;
+padding: 30px 10px;
+flex-direction: column;
+}
+.container .input{
+    width: 100%;
+    height: 240px;
+    border: 1px solid #5c0c97;
+    padding: 10px;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.input .btn{
+    padding: 10px;
+    border-radius: 8px;
+    background: linear-gradient(45deg,#840fda,#5c0c97);
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#foto{
+    opacity: 0;
+    width: 100%;
+    height: 240px;
+    position: absolute;
+}
+ .color-box {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      margin: 10px;
+      text-align: center;
+    }
+  .color-box{
+      width: 100%;
+      height: 34px;
+      border: 1px solid white;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: white;
+  }
+  #colors-container{
+      width: 100%;
+      padding: 3px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid gainsboro;
+      border-radius: 5px;
+  }
+  .nav2{
+      width: 100%;
+      display: flex;
+      padding: 10px;
+      margin-top: 30px;
+      gap:14px;
+  }
+.nav2 .camera{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: white;
+     border: 1px solid gainsboro;
+     box-shadow: 1px 1px 7px gainsboro;
+     position: relative;
+}
+.nav2 .camera.red{
+    box-shadow: 1px 1px 7px #5c0c97;
+}
+.nav2 .popular{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: white;
+    border: 1px solid gainsboro;
+   box-shadow: 1px 1px 7px gainsboro;
+   position: relative;
+}
+.nav2 .file{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: white;
+    border: 1px solid gainsboro;
+   box-shadow: 1px 1px 7px gainsboro;
+   position: relative;
+}
+.nav2 .file #foto {
+opacity: 0;
+background: red;
+height: 40px;
+}
+.nav2 img{
+    width: 40px;
+}
+#btnclear{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btnclear div{
+    background: #840fdc;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+.make{
+    width: 100%;
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    padding:10px;
+}
+.make input {
+width: 100%;
+
+}
+.viewColor{
+    width: 100%;
+    height: 60px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    
+}
+#video{
+    width: 130px;
+    border: 1px solid white;
+  position: absolute;
+  z-index: 9999;
+  border-radius: 8px;
+  box-shadow: 2px 1px 5px gray;
+  display: block;
+.visible{
+    display: block;
+}
+
+#canvas{
+  position: fixed;
+  z-index: 9999;
+  width: 300px;
+  
+}
